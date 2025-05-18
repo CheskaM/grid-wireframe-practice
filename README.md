@@ -16,3 +16,15 @@ Instructions:
 
 IMPORTANT:
 While working on this assignment, please choose one of the mobile-device emulators that your browser's developer tools provide when working on this project.
+
+🔭 Build the Wireframe with Grid: Part 2:
+
+Instructions:
+
+1.Open up your existing project called grid-wireframe-practice
+2.Save the following image as desktop-wireframe.png and place it in the root level of your project.
+3.Update style.css to include a media query that will update the page's layout to match the wireframe below as much as possible
+4.Submit the link to your repository once all work is completed and pushed to GitHub.
+
+Note
+Research different breakpoints that are commonly used to decide when the layout should update.

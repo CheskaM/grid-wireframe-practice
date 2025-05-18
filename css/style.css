@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
   background: #f6f1f1;
   align-content: center;
-  width: 30%;
+  width: auto;
 }
 
 .grid-container,
@@ -67,4 +67,45 @@ nav ul li {
 
 .bottom-bar {
   background-color: rgb(111, 176, 225);
+}
+
+@media (min-width: 768px){
+  body{
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "topbar nav bottombar"
+      "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    row-gap: 0;
+  }
+  
+  header{
+    grid-area: header;
+  }
+
+  .top-bar{
+    grid-area: topbar;
+  }
+
+  nav{
+    grid-area: nav;
+  }
+
+  .bottom-bar{
+    grid-area: bottombar;
+  }
+
+  footer{
+    grid-area: footer;
+  }
+
+  header, nav, aside, footer{
+    margin: 0;
+    padding: 0;
+  }
 }
